@@ -1,22 +1,29 @@
 # Hito 0
 ## Configuración de usuario y repositorio
 ### Edición del perfil
+Para que la identificación del perfil sea mejor, se ha establecido una imagen de perfil junto con una serie de datos personales:
 ![Edición del perfil](img/edit_perfil.png)
 
 ### Activación del segundo factor de autenticación
+Para la autenticación en dos pasos se ha necesitado de un dispositivo auxiliar. En esta imagen se puede ver el mensaje de confirmación que nos asegura que el proceso se ha completado de manera correcta. Con esta función, se solicitará una doble confirmación de identidad cada vez que se inicie sesión en un nuevo dispositivo.
 ![Autenticación en dos pasos](img/auth_2pasos.png)
 
 ### Creación de claves
-![Configuración SSH](img/ssh1.png)
+En la siguiente imagen podemos ver cómo generar las claves pública y privada del protocolo SSH desde nuestro ordenador local:
+![Configuración SSH 1](img/ssh1.png)
 
-![Configuración SSH](img/ssh2.png)
+En esta imagen podemos ver las dos claves generadas y el contenido de la  clave pública que debemos usar para introducir en nuestro GitHub:
+![Configuración SSH 2](img/ssh2.png)
 
-![Configuración SSH](img/ssh3.png)
+Una vez hemos añadido nuestra clave pública a GitHub vemos cómo la conexion se ha establecido correctamente:
+![Configuración SSH 3](img/ssh3.png)
 
+Finalmente podemos ver cómo se incluye la carpeta de fotos para esta sección desde la línea de comandos:
 ![Prueba conexión SSH](img/subir_folder.png)
 
 ## Descripción del problema a resolver
-La idea de este proyecto es crear una aplicación de intercambio o trueque de servicios, productos y conocimientos, enfocándose de forma especial em aquellas que necesitan de hablidades específicas para completar objetivos. Se plantea como un mercado en línea donde los usuarios podrán ofertar y obtener estos recursos. Con esta aplicación, los usuarios podrán acceder de forma cómoda a los servicios y habilidades (incluso especializados) de aquellos que las ofrezcan, mientras que estos últimos obtienen una plataforma donde de una manera flexible y eficiente pueden monetizar u obtener beneficio por aquellos recursos que decidan ofrecer
+La idea de este proyecto es crear una aplicación de intercambio o trueque de servicios, productos y conocimientos, enfocándose de forma especial em aquellas que necesitan de hablidades específicas para completar objetivos. Se plantea como un mercado en línea donde los usuarios podrán ofertar y obtener estos recursos.
+ Con esta aplicación, los usuarios podrán acceder de forma cómoda a los servicios y habilidades (incluso especializados) de aquellos que las ofrezcan, mientras que estos últimos obtienen una plataforma donde de una manera flexible y eficiente pueden monetizar u obtener beneficio por aquellos recursos que decidan ofrecer
 
 ### Características del proyecto:
 
