@@ -6,8 +6,8 @@
 - ⚖️ [Licencia GNU usada para el proyecto](LICENSE)
 
 ## Hito 1
-- [User Histories](doc/hito1/1_US.md)
-- [Milestones(Epics)](doc/hito1/1_epics-milestones.md)
+- 🧑‍🦱 [User Histories](doc/hito1/1_US.md)
+- 🗿 [Milestones(Epics)](doc/hito1/1_epics-milestones.md)
 
 ## Hito 2
 ## Hito 3
