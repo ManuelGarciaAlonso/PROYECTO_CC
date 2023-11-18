@@ -1,0 +1,8 @@
+lenguaje:
+-python
+entidad:
+-src/SvcMkp.py
+test:
+-tests/tests.py
+fichero tareas:
+-tasks.py
