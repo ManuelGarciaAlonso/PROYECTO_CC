@@ -16,6 +16,10 @@
 - 🖼️ [Elección y uso del marco de pruebas](doc/hito2/2_testframe.md)
 
 ## Hito 3
+- 🗑️ [Elección correcta y justificada del contenedor base](doc/hito3/3_container.md)
+- 🐋 [Dockerfile correcto adaptado de forma correcta a las clases o módulos que se están testeando, incluyendo optimización del tamaño](doc/hito3/3_docker_config.md)
+- 📤 [Contenedor subido correctamente a Docker Hub y documentación de la actualización automática](doc/hito3/3_upload_container.md)
+- 🗃️ [Uso de registros alternativos y públicos de contenedores](doc/hito3/3_alternatives.md)
 
 ## Hito 4
 
