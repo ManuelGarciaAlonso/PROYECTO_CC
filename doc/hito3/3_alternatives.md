@@ -1,0 +1,64 @@
+## Uso de registros alternativos y públicos de contenedores
+
+El uso de registros de contenedores alternativos y públicos es una buena práctica en el desarrollo y despliegue de aplicaciones en contenedores. En este proyecto, hemos optado por utilizar el GitHub Container Registry como alternativa a Docker Hub. Esta herramienta permite una integración más estrecha con los repositorios de GitHub, simplificando la gestión de imágenes en el mismo entorno que el código fuente, cosa que no pasa con Docker. Esto nos permite un control más detallado sobre quién puede acceder y modificar las imágenes de contenedores. Ademnás, se aprovecha la autenticación y diferentes permisos que hay en GitHub, lo que facilita la configuración y privacidad del proyecto.
+
+En este caso, debemos generar otro archivo *.yml* que use de esta nueva tecnología. En nuestro caso, la acción [docker_full_publish.yml](/./docker_full_publish.yml) será configurada para usar ambos Dokcer Hub y GitHub Container Registry:
+```yml
+name: Publish Docker image in Docker Hub and Github Container Registry
+
+on:
+  release:
+    types: [published]
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  push_to_registries:
+    name: Push Docker image to multiple registries
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+      
+      - name: Log in to Docker Hub
+        uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
+        with:
+          username: ${{ secrets.DOCKER_NAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+      
+      - name: Log in to the Container registry
+        uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
+        with:
+          images: |
+            gaalm/imagen_proyectocc
+            ghcr.io/${{ github.repository }}
+      
+      - name: Build and push Docker images
+        uses: docker/build-push-action@3b5e8027fcad23fda98b2e3ac259d8d67585f671
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+```
+
+Podemos ver la ejecución de nuestra acción en Github:
+
+![Ejecución de la acción](/./img/3_fullpublish.png)
+
+Podemos ver finalmente el paquete generado por nuestra acción:
+
+![Paquete de Github Container Registry](/./img/3_action_package.png)

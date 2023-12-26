@@ -24,7 +24,7 @@ docker build -t imagen_proyectocc .
 docker run imagen_proyectocc
 ```
 
-![Carga de imagen en Docker](././img/3_cmd_stats.png)
+![Carga de imagen en Docker](/./img/3_im_creation_and_exec.png)
 
 Podemos comprobar las imágenes existentes mediante los siguientes comandos:
 ```
@@ -32,4 +32,8 @@ docker ps -a
 docker images
 ```
 
-![Información de docker](././img/3_cmd_stats.png)
+![Información de Docker](/./img/3_cmd_stats.png)
+
+Dentro de la interfaz de Docker, podemos ver que la imagen y el contenedor que han sido creados:
+![Imagen en Docker](/./img/3_img_created.png)
+![Container en Docker](/./img/3_container_created.png)

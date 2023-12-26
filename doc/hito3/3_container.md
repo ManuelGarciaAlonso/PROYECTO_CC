@@ -10,11 +10,11 @@ Para el proyecto se ha decidido hacer uso del python:3.9-slim ya que para el uso
 
 ### Uso
 Para hacer uso de Docker, debemos realizar una serie de tareas previas a la creación del DockerFile:
-1. Instalar docker desktop
+1. Instalar docker desktop: 
 Para instalar Docker Desktop debemos acceder a su página web e instalar el programa. Posterior a ello debemos introducir nuestras credenciales e iniciar sesión.
 ![Inicio de sesión](/././img/2_tests_executed.png)
-2. Establecer fichero de requisitos:
-Este proyecto tiene una serie de dependencias que debemos indidcar para evitar errores en la ejecución. Nuestro [requirements.txt](././requirements.txt) en concreto debe incluir invoke y pytest
+2. Establecer fichero de requisitos: 
+Este proyecto tiene una serie de dependencias que debemos indidcar para evitar errores en la ejecución. Nuestro [requirements.txt](/./requirements.txt) en concreto debe incluir invoke y pytest
 3. Ejecutamos los comandos necesarios para contruir y cargar la imagen:
 ```cmd
 docker build -t imagen .
