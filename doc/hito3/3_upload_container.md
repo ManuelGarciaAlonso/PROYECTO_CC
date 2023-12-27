@@ -14,7 +14,7 @@ Podemos ver el resultado de la ejecución de estos comandos en Docker Hub, donde
 
 ## Automatización
 Por otro lado, tenemos la opción de configurar un archivo *.yml* para crear una acción en nuestro repositorio de Github. Esta acción es tal que para cada modificación del repositorio, se vuelve a cargar un nuevo contenedor a Docker Hub para actualizar de forma automática esta imagen en línea de nuestra ejecución.
-Para ello, creamos el archivo [docker_publish.yml](/./docker_publish.yml) con el siguiente código:
+Para ello, creamos el archivo [docker_publish.yml](/./.github/workflows/docker_publish.yml) con el siguiente código:
 ```yml
 name: Publish Docker image
 

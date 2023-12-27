@@ -2,7 +2,7 @@
 
 El uso de registros de contenedores alternativos y públicos es una buena práctica en el desarrollo y despliegue de aplicaciones en contenedores. En este proyecto, hemos optado por utilizar el GitHub Container Registry como alternativa a Docker Hub. Esta herramienta permite una integración más estrecha con los repositorios de GitHub, simplificando la gestión de imágenes en el mismo entorno que el código fuente, cosa que no pasa con Docker. Esto nos permite un control más detallado sobre quién puede acceder y modificar las imágenes de contenedores. Ademnás, se aprovecha la autenticación y diferentes permisos que hay en GitHub, lo que facilita la configuración y privacidad del proyecto.
 
-En este caso, debemos generar otro archivo *.yml* que use de esta nueva tecnología. En nuestro caso, la acción [docker_full_publish.yml](/./docker_full_publish.yml) será configurada para usar ambos Dokcer Hub y GitHub Container Registry:
+En este caso, debemos generar otro archivo *.yml* que use de esta nueva tecnología. En nuestro caso, la acción [docker_full_publish.yml](/./.github/workflows/docker_full_publish.yml) será configurada para usar ambos Dokcer Hub y GitHub Container Registry:
 ```yml
 name: Publish Docker image in Docker Hub and Github Container Registry
 
