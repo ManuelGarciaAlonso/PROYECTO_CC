@@ -15,10 +15,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                script {
-                    bat 'pip3 --upgrade pip'
-                    bat 'pip3 install numpy pytest'
-                    bat 'pip install -r requirements.txt'  
+                script { 
                     bat 'C:\\Users\\manga\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\invoke test'
                     }
             }
