@@ -15,7 +15,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    bat 'C:\\Users\\manga\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\pytest.exe && python -m venv entorno1 && .\\entorno1\\Scripts\\activate && .\\venv\\Scripts\\invoke test'
+                    bat 'invoke test'
                     }
             }
         }
