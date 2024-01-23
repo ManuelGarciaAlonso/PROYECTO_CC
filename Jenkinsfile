@@ -12,6 +12,12 @@ pipeline {
             }
         }
 
+        stage('Setup'){
+        steps{
+            bat 'pip install -r requirements.txt'  
+            }
+        }
+
         stage('Test') {
             steps {
                 script {
