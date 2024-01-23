@@ -15,8 +15,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    bat 'cd tests'
-                    bat 'C:\\Users\\manga\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\pytest.exe'
+                    bat 'cd tests && C:\\Users\\manga\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\pytest.exe'
                 }
             }
         }
