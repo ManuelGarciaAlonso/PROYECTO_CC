@@ -15,7 +15,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    bat 'invoke test'
+                    bat 'C:\\Users\\manga\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\invoke test'
                     }
             }
         }
