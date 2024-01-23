@@ -15,10 +15,10 @@ pipeline {
         stage('Setup'){
         steps{
             script{
-            bat 'pip3 --install --upgrade pip'
-            bat 'pip3 install numpy pytest'
-            bat 'python -m pytest test.py'
-            bat 'pip install -r requirements.txt'  
+                bat 'pip3 --install --upgrade pip'
+                bat 'pip3 install numpy pytest'
+                bat 'pip install -r requirements.txt'  
+                } 
             }
         }
 
