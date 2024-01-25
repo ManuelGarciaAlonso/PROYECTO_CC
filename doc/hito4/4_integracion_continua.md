@@ -1,11 +1,12 @@
 ## Elección de Sistema de Integración Continua y Justificación
 
-### Elección y justificación 
+### Elección y justificación
+
 Para el proyecto se ha decidido hacer uso de Jenkins ya que nos proporciona diferentes ventajas:
-1. Flexibilidad y personalización:
-2. Robustez y uso de herramientas:
-3. Escalabilidad:
-4. Comunidad y soporte:
+- Flexibilidad y personalización
+- Robustez y uso de herramientas
+- Escalabilidad
+- Comunidad y soporte
 
 ### Instalación de Jenkins
 
