@@ -7,10 +7,10 @@ Para instalar Ngork usamos su página web, y una vez lo hemos instalado debemos 
 ![Instalación Ngork](/./img/4_ngork_1.png)
 
 Utilizando los siguientes comandos nos autenticamos y creamos un servicio remoto accesible por github de nuestro servicio local de Jenkins:
-´´´cmd  
+```cmd 
 ngrok config add-authtoken 2bK5SsBEiIu7POCmUmtSjQ2VpyI_rB2tN2882ksNYpSyApcs
 ngrok http --domain=foxhound-quality-minnow.ngrok-free.app 8080
-´´´
+```
 ![Configuración Ngork](/./img/4_ngork_2.png)
 ![Conexión Ngork](/./img/4_ngork_3.png)
 
