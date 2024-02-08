@@ -27,6 +27,9 @@
 - 📦 [Aprovechamiento del contenedor de Docker en CI](doc/hito4/4_docker_ci.md)
 
 ## Hito 5
+- ✍️ [Elección y justificación de los frameworks](doc/hito5/5_1.md)
+- ⬇️ [Instalación y configuración de las herramientas](doc/hito5/5_2.md)
+- 🛅 [Uso y demostración del microservicio](doc/hito5/5_3.md)
 
 ## Desarrollo y evolución
 
@@ -37,3 +40,4 @@ Los hitos del desarrollo del proyecto se pueden encontrar [aquí](https://github
 ### Issues e Historias de Usuario
 
 Las historias de usuario e issues del proyecto se pueden encontrar [aquí](https://github.com/ManuelGarciaAlonso/CC-23-24/issues).
+
