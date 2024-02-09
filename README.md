@@ -26,7 +26,7 @@
 - 🚀 [Configuración y uso de Jenkins como sistema de integración continua](doc/hito4/4_jenkins.md)
 - 📦 [Aprovechamiento del contenedor de Docker en CI](doc/hito4/4_docker_ci.md)
 
-## Hito 5
+## Hito 5: Diseño y test de un microservicio
 - ✍️ [Elección y justificación de los frameworks](doc/hito5/5_1.md)
 - ⬇️ [Instalación y configuración de las herramientas](doc/hito5/5_2.md)
 - 🛅 [Uso y demostración del microservicio](doc/hito5/5_3.md)
