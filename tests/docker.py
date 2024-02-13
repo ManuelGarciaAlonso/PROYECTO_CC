@@ -14,13 +14,10 @@ def wait_for_service(url, timeout=30):
             raise Exception("Timeout waiting for service")
         time.sleep(1)
 
-# Example usage
-
-
 def test_app_response():
 
-    wait_for_service("http://api:8000/services/")
-    response = requests.get("http://api:8000/services/")
+    wait_for_service("http://localhost:8000/services/")
+    response = requests.get("http://localhost:8000/services/")
     assert response.status_code == 200
 
     wait_for_service("http://localhost:8000/services/Diseño Web")

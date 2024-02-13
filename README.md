@@ -32,6 +32,8 @@
 - 🛅 [Uso y demostración del microservicio](doc/hito5/5_3.md)
 
 ## Hito 6: Composición de Servicios
+- 📊 [Documentación y justificación de la estructura del clúster y la configuración de contenedores](doc/hito6/6_config.md)
+- 🛠️ [Creación del fichero de composición y testeo del clúster](doc/hito6/6_use.md)
 
 ## Desarrollo y evolución
 
