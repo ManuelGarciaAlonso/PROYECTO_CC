@@ -19,6 +19,10 @@ def wait_for_service(url, timeout=30):
 
 def test_app_response():
 
+    wait_for_service("http://api:8000/services/")
+    response = requests.get("http://api:8000/services/")
+    assert response.status_code == 200
+
     wait_for_service("http://localhost:8000/services/Diseño Web")
     response = requests.get("http://localhost:8000/services/Diseño Web")
     assert response.status_code == 200
