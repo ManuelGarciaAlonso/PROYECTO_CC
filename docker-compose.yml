@@ -6,6 +6,8 @@ services:
     volumes:
       - .:/app
     command: pytest
+    networks:
+    - app-network
 
   db:
     build: 
@@ -32,3 +34,8 @@ services:
     volumes:
       - .:/app
     command: ["pytest", "tests.py"]
+    networks:
+    - app-network
+  
+networks:
+  app-network: {}
