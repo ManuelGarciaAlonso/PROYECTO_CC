@@ -1,0 +1,34 @@
+version: '3.8'
+services:
+  test:
+    build:
+      context: .
+    volumes:
+      - .:/app
+    command: pytest
+
+  db:
+    build: 
+      context: .
+    ports:
+        - "8000:8000"
+    volumes:
+        - .:/app
+  networks:
+  - app-network
+
+  docker_test:
+    build:
+      context: .
+    volumes:
+      - .:/app
+    command: ["pytest", "docker.py"]
+    networks:
+    - app-network
+
+  api:
+    build:
+      context: .
+    volumes:
+      - .:/app
+    command: ["pytest", "tests.py"]

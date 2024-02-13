@@ -4,5 +4,8 @@ entidad:
 -src/SvcMkp.py
 test:
 -tests/tests.py
+-tests/docker.py
 fichero tareas:
 -tasks.py
+test-docker-compose:
+  - docker-compose -f docker-compose.yml up --abort-on-container-exit --build
