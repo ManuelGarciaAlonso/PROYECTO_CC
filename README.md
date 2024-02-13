@@ -31,6 +31,8 @@
 - ⬇️ [Instalación y configuración de las herramientas](doc/hito5/5_2.md)
 - 🛅 [Uso y demostración del microservicio](doc/hito5/5_3.md)
 
+## Hito 6: Composición de Servicios
+
 ## Desarrollo y evolución
 
 ### Milestones
