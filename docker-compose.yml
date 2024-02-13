@@ -5,7 +5,7 @@ services:
       context: .
     volumes:
       - .:/app
-    command: pytest
+    command: invoke test
     networks:
       - app-network
 
@@ -24,7 +24,7 @@ services:
       context: .
     volumes:
       - .:/app
-    command: ["pytest", "docker.py"]
+    command: ["pytest", "tests/docker.py"]
     networks:
       - app-network
 
@@ -33,7 +33,7 @@ services:
       context: .
     volumes:
       - .:/app
-    command: ["pytest", "tests.py"]
+    command: ["pytest", "tests/tests.py"]
     networks:
       - app-network
 
